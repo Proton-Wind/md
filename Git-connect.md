@@ -1,0 +1,39 @@
+# 準備０：テスト
+
+# 準備１：Gitのインストール
+- https://git-scm.com/downloads
+- ターミナルでバージョンを確認。
+  ```
+  git --version
+  ```
+# 準備２：Gitの初期設定
+- ターミナルを開き、下記の項目を入力
+  ```
+   git config --global user.name 'username'
+   git config --global user.email 'username@example.com'
+   git config --global core.editor 'code --wait'
+   git config --global merge.tool 'code --wait "$MERGED"'
+   git config --global push.default simple
+   ```
+# 連携手順１：VSCodeでローカルリポジトリを作成
+- ファイルを格納する空のフォルダを作成
+- 作成した空のフォルダを開いた状態で、Gitアイコンをクリックし、「リポジトリを初期化する」をクリック
+
+# 連携手順２：ローカルリポジトリにコミットしてみる
+- Gitアイコンを押したら、Git管理メニューが表示される。＋マークをクリックするとステージングできる。
+- メッセージのところにコミット名を入力し、✓アイコンをクリックすることでコミットできる。
+
+# 連携手順３：GitHubにてリモートリポジトリを作成
+- GitHubにサインインして、リポジトリを新規作成。
+- 作成したリポジトリのURLをコピーしておく。
+
+# 連携完了：VsCodeからGitHubに接続
+- メニューバーの「ターミナル」からターミナルを開く。
+- リモートリポジトリの接続コマンドを入力する
+  ```
+  git remote add origin コピーしたURL
+  ```
+- 続けて以下のコマンドを入力してエンターを押す
+  ```
+  git push -u main
+  ```
