@@ -35,5 +35,5 @@
   ```
 - 続けて以下のコマンドを入力してエンターを押す
   ```
-  git push -u main
+  git push -u origin main
   ```
