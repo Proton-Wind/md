@@ -1,4 +1,4 @@
-# 準備０：テスト
+# 準備０：PCを準備する
 
 # 準備１：Gitのインストール
 - https://git-scm.com/downloads
