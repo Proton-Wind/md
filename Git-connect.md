@@ -1,5 +1,5 @@
 # 準備０：PCを準備する
-- Windows or Mac or ChromeOS
+- Windows or Mac or ChromeOS or Linux
 
 # 準備１：Gitのインストール
 - https://git-scm.com/downloads
