@@ -1,5 +1,5 @@
 # 準備０：PCを準備する
-- Windows or Mac or ChromeOS or Linux or Chrome Flex and Other
+- Windows or Mac or ChromeOS or Linux
 
 # 準備１：Gitのインストール
 - https://git-scm.com/downloads
@@ -38,3 +38,18 @@
   ```
   git push -u origin main
   ```
+
+# 403エラーが出る場合
+- GitHubにサインインして、右上のアカウントアイコンをクリック
+- Settingsを開く
+- 左のメニューから、<>Developer settingsを開く
+- 左のメニューのPersonal access tokensを開き、Fine-graind tokensを開く
+- 右上のGenerate new tokenをクリック
+- Token name に適当な名前を入力
+- Repository accessはAll repositoriesを選択
+- Repository permissionsを開く
+- Contentsを開きaccesslevelをRead and write を選択
+- 一番下のGenerate token をクリック
+- 生成されたtokenをコピー（一度しか表示されないので注意）
+- VsCodeのターミナルでpush origin main と入力すると初回はダイアログが開くので、tokenの入力画面を開き、コピーしたtokenを入力する。
+- pushが成功したことを確認する。
