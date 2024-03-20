@@ -32,13 +32,13 @@
 - メニューバーの「ターミナル」からターミナルを開く。
 - リモートリポジトリの接続コマンドを入力する
   ```
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
   git remote add origin コピーしたURL
-  ```
-- 続けて以下のコマンドを入力してエンターを押す
-  ```
   git push -u origin main
   ```
-
 # 403エラーが出る場合
 - GitHubにサインインして、右上のアカウントアイコンをクリック
 - Settingsを開く
